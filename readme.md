@@ -85,9 +85,6 @@ controller:
   prometheus:
     create: true
     port: 9113
-  customPorts:
-    - name: grafana
-      containerPort: 3000
 ```
 > You will notice above that we have automatically enabled NGINX Plus Ingress Controller to have port 9113 open, enabling `Prometheus` to scrap metrics and send to `Grafana`.
 > 
